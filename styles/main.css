@@ -23,12 +23,29 @@ body {
 
 h2 {
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h3 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+h4 {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.margin-right15 {
+  margin-right: 15px;
+}
+
+.margin-bottom30 {
+  margin-bottom: 30px;
+}
+
+.border-radius50 {
+  border-radius: 50%;
 }
 /*UTILITIES END*/
 
@@ -73,7 +90,7 @@ h3 {
 }
 
 .content-top-bar {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -107,7 +124,7 @@ h3 {
 .content-menu {
   display: flex;
   justify-content: center;
-  padding: 25px 0 20px;
+  padding: 25px 0 0;
 }
 
 .content-menu ul li {
@@ -121,14 +138,12 @@ h3 {
 }
 
 .scrollable-content {
-  background-color: red; /*DEBUG*/
   margin-top: 30px;
 }
 
 .row-1 {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
 }
 
 .row-content {
@@ -137,9 +152,18 @@ h3 {
   align-items: center;
 }
 
-.row-content img {
-  width: 300px;
+.img-container {
+  max-width: 260px;
+  max-height: 260px;
+}
+
+.img-container img {
   max-width: 100%;
+}
+
+.album-title {
+  max-width: 260px;
+  text-align: center;
 }
 
 .row-2 {
