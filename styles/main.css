@@ -7,16 +7,12 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-    color: #999999;
-    font-size: 14px;
+    color: #fff;
+    font-size: 12px;
 }
 /*GENERAL END*/
 
 /*UTILITIES*/
-.color-white {
-  color: #fff;
-}
-
 .bold {
   font-weight: bold;
 }
@@ -70,6 +66,18 @@ body {
   width: 100%;
   height: 85px;
   z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.upgrade-btn {
+  text-decoration: none;
+  margin-right: 18px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 1em 3em;
+  color: #fff;
 }
 
 .scrollable {
@@ -83,14 +91,25 @@ body {
 }
 
 .content-menu {
-  background-color: green; /*DEBUG*/
-  height: 50px; /*DEBUG*/
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 20px;
+}
+
+.content-menu ul li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.content-menu ul li a {
+  text-decoration: none;
+  color: #999999;
 }
 
 .scrollable-content {
   background-color: red; /*DEBUG*/
   height: 400px; /*DEBUG*/
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 /*CONTENT END*/
 /*MAIN CONTENT END*/
