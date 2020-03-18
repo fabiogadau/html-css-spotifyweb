@@ -16,6 +16,20 @@ body {
 .bold {
   font-weight: bold;
 }
+
+.color-grey {
+  color: #999999;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 /*UTILITIES END*/
 
 /*LAYOUT*/
@@ -108,8 +122,34 @@ body {
 
 .scrollable-content {
   background-color: red; /*DEBUG*/
-  height: 400px; /*DEBUG*/
   margin-top: 30px;
+}
+
+.row-1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.row-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row-content img {
+  width: 300px;
+  max-width: 100%;
+}
+
+.row-2 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row-3 {
+  display: flex;
+  flex-flow: row wrap;
 }
 /*CONTENT END*/
 /*MAIN CONTENT END*/
