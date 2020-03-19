@@ -92,6 +92,7 @@ a {
   background-color: #000;
   display: flex;
   flex-direction: column;
+  padding: 0 20px 0;
 }
 
 /*Sidebar Top*/
@@ -100,7 +101,7 @@ a {
 }
 
 .logo {
-  padding: 20px 20px 20px;
+  padding: 20px 0 20px;
 }
 
 .logo-text {
@@ -124,7 +125,7 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 20px 0;
+  padding: 10px 0;
 }
 
 .user-nav:hover {
@@ -136,7 +137,6 @@ a {
 }
 
 .playlist-title {
-  margin-bottom: 10;
   margin-top: 30px;
 }
 
@@ -157,8 +157,22 @@ a {
 
 /*Sidebar Bottom*/
 .sidebar-bottom {
-  background-color: green; /*DEBUG*/
-  height: 50px; /*DEBUG*/
+}
+
+.fa-arrow-alt-circle-down {
+    margin-right: 10px;
+}
+
+.border {
+  border-bottom: 1px solid #999999;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  height: 30px;
+  width: 30px;
+  background-color: #999999;
+  border-radius: 50%;
 }
 /*Sidebar Bottom End*/
 /*SIDEBAR END*/
@@ -219,6 +233,10 @@ a {
 .music-nav li a {
   text-decoration: none;
   color: #999999;
+}
+
+.music-nav li a:hover {
+  border-bottom: 3px solid green;
 }
 
 .music-nav {
@@ -320,6 +338,56 @@ a {
   #sidebar {
     flex-basis: 50px;
   }
+}
+
+@media screen and (max-width: 601px) {
+  .cover-container {
+    max-width: 260px;
+    max-height: 260px;
+  }
+
+  .album-title {
+    max-width: 260px;
+  }
+
+  #sidebar {
+    flex-basis: 50px;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .reset-padding-responsive-sm {
+    padding: 0;
+  }
+
+  .reset-margin-responsive-sm {
+    margin: 0;
+  }
+
+  .user-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .border {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 602px){
+  .small-logo-display-none {
+   display: none;
+ }
 }
 /*SMALL SCREEN END*/
 
