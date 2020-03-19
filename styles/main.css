@@ -318,8 +318,135 @@ a {
 /*BOTTOM PLAYER*/
 #player {
   background-color: #171717;
-  height: 50px; /*DEBUG*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0;
 }
+
+/*Album Playing*/
+.album-playing-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.album-playing-container img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.album-playing-container i {
+  font-size: 16px;
+}
+
+.album-name {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-heart {
+  margin-right: 15px;
+}
+/*Album Playing End*/
+
+/*Player Controller*/
+.player-controller-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.player-controller {
+  padding: 15px 150px 20px;
+  margin: 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.player-controller::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #535353;
+  border-radius: 2px;
+}
+
+/*.player-controller:hover {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  height: 4px;
+  background: green;
+  border-radius: 2px;
+}*/
+
+.player-controller a {
+  margin-right: 30px;
+}
+
+#player i:hover {
+  color: #1dd05d;
+}
+
+.fa-random,
+.fa-step-backward,
+.fa-step-forward,
+.fa-redo-alt {
+  font-size: 16px;
+}
+
+.fa-play-circle {
+  font-size: 28px;
+}
+
+.music-time {
+  align-self: flex-end;
+}
+/*Player Controller End*/
+
+/*Right Controller*/
+.right-controller {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-controller i {
+  font-size: 12px;
+}
+
+.right-controller a {
+  margin-right: 15px;
+}
+
+.right-controller-bar {
+  width: 100px;
+  height: 4px;
+  background: #535353;
+  border-radius: 2px;
+  align-self: center;
+  position: relative;
+}
+
+/*.right-controller-bar:hover {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2%;
+  height: 4px;
+  background: green;
+  border-radius: 2px;
+}*/
+/*Right Controller End*/
 /*BOTTOM PLAYER END*/
 /*LAYOUT END*/
 
