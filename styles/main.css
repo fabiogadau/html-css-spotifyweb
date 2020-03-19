@@ -17,8 +17,16 @@ body {
   font-weight: bold;
 }
 
+.font-size14 {
+  font-size: 14px;
+}
+
 .color-grey {
   color: #999999;
+}
+
+.color-grey:hover {
+  color: #fff;
 }
 
 h2 {
@@ -45,12 +53,20 @@ a {
   margin-right: 15px;
 }
 
+.margin-left20 {
+  margin-left: 20px;
+}
+
 .margin-bottom30 {
   margin-bottom: 30px;
 }
 
 .border-radius50 {
   border-radius: 50%;
+}
+
+.pointer {
+  cursor: pointer;
 }
 /*UTILITIES END*/
 
@@ -78,14 +94,73 @@ a {
   flex-direction: column;
 }
 
+/*Sidebar Top*/
 .sidebar-top {
   flex-grow: 1;
 }
 
+.logo {
+  padding: 20px 20px 20px;
+}
+
+.logo-text {
+  max-width: 120px;
+}
+
+.small-logo {
+  max-width: 30px;
+}
+
+.user-nav-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-nav-container img {
+  max-width: 30px;
+}
+
+.user-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px 0;
+}
+
+.user-nav:hover {
+  border-left: 3px solid #1dd05d;
+}
+
+.user-nav img {
+  margin-right: 5px;
+}
+
+.playlist-title {
+  margin-bottom: 10;
+  margin-top: 30px;
+}
+
+.fa-plus-square {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.playlist {
+  margin-top: 15px;
+}
+
+.playlist ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+/*Sidebar Top End*/
+
+/*Sidebar Bottom*/
 .sidebar-bottom {
   background-color: green; /*DEBUG*/
   height: 50px; /*DEBUG*/
 }
+/*Sidebar Bottom End*/
 /*SIDEBAR END*/
 
 /*CONTENT*/
@@ -94,7 +169,8 @@ a {
   flex-grow: 1;
 }
 
-.content-top-bar {
+/*Content Top Bar*/
+.top-bar {
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
@@ -114,7 +190,9 @@ a {
   border-radius: 20px;
   padding: 1em 3em;
 }
+/*Content Top Bar End*/
 
+/*Music*/
 .music {
   position: absolute;
   top: 0;
@@ -133,6 +211,7 @@ a {
 
 .music-nav li {
   display: inline-block;
+  list-style: none;
   padding-right: 25px;
   margin-bottom: 30px;
 }
@@ -214,6 +293,7 @@ a {
   display: flex;
   flex-flow: row wrap;
 }
+/*MusicEnd*/
 /*CONTENT END*/
 /*MAIN CONTENT END*/
 
