@@ -236,7 +236,7 @@ a {
 }
 
 .music-nav li a:hover {
-  border-bottom: 3px solid green;
+  border-bottom: 3px solid #1dd05d;
 }
 
 .music-nav {
