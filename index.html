@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone</title>
     <!--Font Family-->
@@ -12,19 +12,20 @@
   </head>
   <body>
 
-    <!--GENERAL CONTAINER-->
+    <!--GENERAL CONTAINER END-->
     <div id="app">
 
       <!--MAIN CONTENT-->
       <main id="main-window">
 
-        <!--SIDEBAR-->
+        <!--Sidebar-->
         <aside id="sidebar">
 
+          <!--Sidebar Top-->
           <div class="sidebar-top">
 
             <div class="logo">
-              <img src="img/logo.svg" alt="logo" class="logo-text pointer logo-display-none">
+              <img src="img/logo.svg" alt="logo" class="logo-text pointer logo-display-none logo-display-block">
               <img src="img/logo-small.svg" alt="logo" class="small-logo pointer small-logo-display-none">
             </div>
 
@@ -32,31 +33,31 @@
 
               <div class="user-nav">
                 <img src="img/home.svg" alt="home" class="pointer reset-margin-responsive-sm">
-                <a href="#" class="color-grey display-none">Home</a>
+                <a href="#" class="color-grey display-none display-block">Home</a>
               </div>
 
               <div class="user-nav">
                 <img src="img/search.svg" alt="search" class="pointer reset-margin-responsive-sm">
-                <a href="#" class="color-grey display-none">Cerca</a>
+                <a href="#" class="color-grey display-none display-block">Cerca</a>
               </div>
 
               <div class="user-nav">
                 <img src="img/libreria.svg" alt="library" class="pointer reset-margin-responsive-sm">
-                <a href="#" class="color-grey display-none">La tua libreria</a>
+                <a href="#" class="color-grey display-none display-block">La tua libreria</a>
               </div>
 
             </div>
 
             <div class="user-nav-container">
 
-              <a href="#" class="playlist-title display-none"><h3>PLAYLIST</h3></a>
+              <a href="#" class="playlist-title display-none display-block"><h3>PLAYLIST</h3></a>
 
               <div class="user-nav">
-                <a href="#" class="display-none"><i class="fas fa-plus-square color-grey"></i></a>
-                <a href="#" class="color-grey font-size14 display-none">Crea Playlist</a>
+                <a href="#" class="display-none display-block"><i class="fas fa-plus-square color-grey"></i></a>
+                <a href="#" class="color-grey font-size14 display-none display-block">Crea Playlist</a>
               </div>
 
-              <div class="playlist display-none">
+              <div class="playlist display-none display-block">
                 <ul>
                   <li><a href="#" class="color-grey">Nome Playlist</a></li>
                   <li><a href="#" class="color-grey">Nome Playlist</a></li>
@@ -71,36 +72,42 @@
             </div>
 
           </div>
+          <!--Sidebar Top End-->
 
+          <!--Sidebar Bottom-->
           <div class="sidebar-bottom">
+            <div class="user-nav-container">
 
-          <div class="user-nav-container">
-
-            <div class="user-nav border">
+            <div class="user-nav-bottom border">
               <a href="#"><i class="far fa-arrow-alt-circle-down color-grey"></i></a>
-              <a href="#" class="color-grey font-size14 display-none">Installa app</a>
+              <a href="#" class="color-grey font-size14 display-none display-block">Installa app</a>
             </div>
 
-            <div class="user-nav">
-              <img src="img/profile.svg" alt="library" class="profile-img pointer reset-margin-responsive-sm">
-              <a href="#" class="color-grey display-none"><h3>Jonh Doe</h3></a>
+            <div class="user-nav-bottom">
+              <img src="img/profile.svg" alt="library" class="profile-img pointer">
+              <a href="#" class="color-grey display-none display-block"><h3>Jonh Doe</h3></a>
             </div>
 
           </div>
-
           </div>
+          <!--Sidebar Bottom End-->
+
         </aside>
-        <!--SIDEBAR END-->
+        <!--Sidebar End-->
 
-        <!--CONTENT-->
+        <!--Content-->
         <div id="content">
 
+          <!--Top Bar-->
           <div class="top-bar">
             <a href="#" class="upgrade-btn">EFFETTUA L'UPGRADE</a>
           </div>
+          <!--Top Bar-->
 
+          <!--Music-->
           <div class="music">
 
+            <!--Music Menu-->
             <nav class="music-menu">
               <ul class="music-nav">
                 <li><a href="#" class="color-grey">IN EVIDENZA</a></li>
@@ -111,7 +118,9 @@
                 <li><a href="#" class="color-grey">SCOPRI</a></li>
               </ul>
             </nav>
+            <!--Music Menu-->
 
+            <!--Music Content-->
             <section class="music-content">
 
               <h2 class="margin-bottom30">Recently played</h2>
@@ -181,7 +190,7 @@
             <section class="scrollable-content">
 
               <h2>Creato per John Doe</h2>
-              <h4 class="color-grey">Più ascolti, più accurati saranno i suggerimenti.</h4>
+              <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
 
               <div class="row-album-container2">
 
@@ -208,7 +217,7 @@
             <section class="scrollable-content">
 
               <h2>Artisti più popolari</h2>
-              <h4 class="color-grey">Più ascolti, più accurati saranno i suggerimenti.</h4>
+              <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
 
               <div class="row-album-container3">
 
@@ -231,9 +240,13 @@
               </div>
 
             </section>
+            <!--Music Content End-->
+
           </div>
+          <!--Music End-->
+
         </div>
-        <!--CONTENT END-->
+        <!--Content End-->
 
       </main>
       <!--MAIN CONTENT END-->
@@ -241,16 +254,21 @@
       <!--BOTTOM PLAYER-->
       <footer id="player">
 
+        <!--Album Playing-->
         <div class="album-playing-container">
           <img src="img/sinister.jpeg" alt="sinister" class="pointer">
           <div class="album-name">
             <a href="#">Sinister</a>
             <a href="#">Brano Nome</a>
           </div>
-          <a href="#"><i class="far fa-heart"></i></a>
-          <a href="#"><i class="far fa-folder"></i></a>
+          <div class="album-icons">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a>
+          </div>
         </div>
+        <!--Album Playing End-->
 
+        <!--Player Controller-->
         <div class="player-controller-container">
           <div class="player-controller">
             <ul>
@@ -269,7 +287,9 @@
             <span class="song-duration">4:35</span>
           </div>
         </div>
+        <!--Player Controller End-->
 
+        <!--Right Controller-->
         <div class="right-controller-container">
           <div class="right-controller">
             <a href="#"><i class="fas fa-list-ul"></i></a>
@@ -277,15 +297,16 @@
             <a href="#"><i class="fas fa-volume-up"></i></a>
           </div>
           <div class="right-controller-bar">
-            <div class="partial-bar"></div>
+            <div class="right-controller-partial-bar"></div>
           </div>
         </div>
+        <!--Right Controller-->
 
       </footer>
       <!--BOTTOM PLAYER END-->
 
     </div>
-    <!--GENERAL CONTAINER END-->
+    <!--GENERAL CONTAINER-->
 
   </body>
 </html>
