@@ -24,7 +24,7 @@
           <div class="sidebar-top">
 
             <div class="logo">
-              <img src="img/logo.svg" alt="logo" class="logo-text pointer display-none">
+              <img src="img/logo.svg" alt="logo" class="logo-text pointer logo-display-none">
               <img src="img/logo-small.svg" alt="logo" class="small-logo pointer small-logo-display-none">
             </div>
 
@@ -252,18 +252,21 @@
         </div>
 
         <div class="player-controller-container">
-          <div class="music-time">
-            0:25
-          </div>
           <div class="player-controller">
-            <a href="#"><i class="fas fa-random"></i></a>
-            <a href="#"><i class="fas fa-step-backward"></i></a>
-            <a href="#"><i class="far fa-play-circle"></i></a>
-            <a href="#"><i class="fas fa-step-forward"></i></a>
-            <a href="#"><i class="fas fa-redo-alt"></i></a>
+            <ul>
+              <li><a href="#"><i class="fas fa-random"></i></a></li>
+              <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+              <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+              <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+              <li>  <a href="#"><i class="fas fa-redo-alt"></i></a></li>
+            </ul>
           </div>
-          <div class="music-time">
-            4:35
+          <div class="progressbar-and-number">
+            <span class="song-progress">0:25</span>
+            <div class="progress-bar">
+              <div class="partial-bar"></div>
+            </div>
+            <span class="song-duration">4:35</span>
           </div>
         </div>
 
@@ -272,9 +275,10 @@
             <a href="#"><i class="fas fa-list-ul"></i></a>
             <a href="#"><i class="fas fa-desktop"></i></a>
             <a href="#"><i class="fas fa-volume-up"></i></a>
-            <div class="right-controller-bar"></div>
           </div>
-
+          <div class="right-controller-bar">
+            <div class="partial-bar"></div>
+          </div>
         </div>
 
       </footer>

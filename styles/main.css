@@ -13,10 +13,6 @@ body {
 /*GENERAL END*/
 
 /*UTILITIES*/
-.bold {
-  font-weight: bold;
-}
-
 .font-size14 {
   font-size: 14px;
 }
@@ -110,6 +106,10 @@ a {
 
 .small-logo {
   max-width: 30px;
+}
+
+.small-logo-display-none {
+  display: none;
 }
 
 .user-nav-container {
@@ -326,6 +326,7 @@ a {
 
 /*Album Playing*/
 .album-playing-container {
+  flex-basis: 30%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -341,33 +342,61 @@ a {
 }
 
 .album-name {
-  margin-right: 40px;
+  padding-right: 40px;
   display: flex;
   flex-direction: column;
 }
 
 .fa-heart {
-  margin-right: 15px;
+  padding-right: 15px;
 }
 /*Album Playing End*/
 
 /*Player Controller*/
 .player-controller-container {
-  display: flex;
-  justify-content: center;
+  flex-basis: 30%;
   margin-bottom: 20px;
 }
 
 .player-controller {
-  padding: 15px 150px 20px;
-  margin: 0 40px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
+  padding: 20px 20px;
 }
 
-.player-controller::before {
+.player-controller ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressbar-and-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  height: 4px;
+  flex-grow: 1;
+  background-color: #535353;
+  border-radius: 5px;
+}
+
+.partial-bar {
+  height: 4px;
+  width: 25%;
+  background-color: green;
+  border-radius: 5px;
+}
+
+.song-progress {
+  padding-right: 30px;
+}
+
+.song-duration {
+  padding-left: 30px;
+}
+
+/*.player-controller::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -376,21 +405,39 @@ a {
   height: 4px;
   background: #535353;
   border-radius: 2px;
-}
+}*/
 
-/*.player-controller:hover {
+/*.player-controller:hover::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 10%;
+  width: 25%;
   height: 4px;
   background: green;
   border-radius: 2px;
 }*/
 
-.player-controller a {
-  margin-right: 30px;
+/*.player-controller:hover::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 125px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+}*/
+
+.player-controller ul li {
+  display: inline;
+}
+
+.fa-random,
+.fa-step-backward,
+.fa-play-circle,
+.fa-step-forward {
+  padding-right: 30px;
 }
 
 #player i:hover {
@@ -407,13 +454,16 @@ a {
 .fa-play-circle {
   font-size: 28px;
 }
-
-.music-time {
-  align-self: flex-end;
-}
 /*Player Controller End*/
 
 /*Right Controller*/
+.right-controller-container {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .right-controller {
   display: flex;
   flex-direction: row;
@@ -424,11 +474,11 @@ a {
 }
 
 .right-controller a {
-  margin-right: 15px;
+  padding-right: 15px;
 }
 
 .right-controller-bar {
-  width: 100px;
+  flex-basis: 20%;
   height: 4px;
   background: #535353;
   border-radius: 2px;
@@ -436,7 +486,7 @@ a {
   position: relative;
 }
 
-/*.right-controller-bar:hover {
+/*.right-controller-bar:hover::before {
   content: '';
   position: absolute;
   top: 0;
@@ -467,6 +517,16 @@ a {
   }
 }
 
+@media screen and (max-width: 600px) {
+ .small-logo-display-none {
+   display: block;
+ }
+
+  .logo-display-none {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 601px) {
   .cover-container {
     max-width: 260px;
@@ -481,22 +541,15 @@ a {
     flex-basis: 50px;
   }
 
-  .display-none {
-    display: none;
-  }
-
-  .reset-padding-responsive-sm {
-    padding: 0;
-  }
-
-  .reset-margin-responsive-sm {
-    margin: 0;
-  }
-
   .user-nav {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+  }
+
+  .fa-arrow-alt-circle-down {
+    font-size: 14px;
+    padding-left: 10px;
   }
 
   .logo {
@@ -509,10 +562,12 @@ a {
   .border {
     border: none;
   }
-}
 
-@media screen and (min-width: 602px){
-  .small-logo-display-none {
+  #sidebar {
+    padding: 0;
+  }
+
+ .display-none {
    display: none;
  }
 }
@@ -520,7 +575,7 @@ a {
 
 /*MEDIA QUERY*/
 /*MEDIUM SCREEN*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .cover-container {
     max-width: 175px;
     max-height: 175px;
