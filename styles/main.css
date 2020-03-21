@@ -211,6 +211,15 @@ a {
   border: 1px solid #fff;
   border-radius: 20px;
   padding: 1em 3em;
+  transition: padding 0.3s;
+}
+
+.upgrade-btn:hover {
+  text-decoration: none;
+  margin-right: 18px;
+  border: 1px solid #fff;
+  border-radius: 32px;
+  padding: 2em 4em;
 }
 /*Top Bar End*/
 
@@ -256,10 +265,6 @@ a {
   border-radius: 4px;
   background-color: #1dd05d;
 }
-
-/*.music-nav li a:hover {
-  border-bottom: 3px solid #1dd05d;
-}*/
 
 .music-nav {
   display: flex;
@@ -392,7 +397,7 @@ a {
 
 /*Player Controller*/
 .player-controller-container {
-  flex-basis: 30%;
+  flex-basis: 40%;
   margin-bottom: 12px;
 }
 
@@ -435,7 +440,7 @@ a {
   background-color: #fff;
   position: absolute;
   bottom: -5px;
-  left: 22%;
+  left: 23%;
   cursor: pointer;
 }
 
