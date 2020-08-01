@@ -32,6 +32,7 @@ Spotify Web replica using HTML and CSS.
 ![](img/Spotify.gif)
 
 
-> ## *Visit my Github profile to see other progects :octocat:* ##
 
-https://github.com/fabiogadau
+> Visit my Github profile to see other projects
+
+## :octocat: https://github.com/fabiogadau :octocat: ##
